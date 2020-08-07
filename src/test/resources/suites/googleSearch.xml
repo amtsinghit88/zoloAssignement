@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="google Search" verbose="10">
+
+	<listeners>
+
+	</listeners>
+
+
+<!--	<test name="google search content">
+        <parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.zolostay.ui.ZoloGoogleSearchResult">
+				<methods>
+					<include name="searchContentAtGoogle"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+	<test name="google search content-firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.zolostay.ui.ZoloGoogleSearchResult">
+				<methods>
+					<include name="searchContentAtGoogle"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 
+
